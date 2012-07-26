@@ -43,7 +43,7 @@ class Guest extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('first_name, last_name, mail, gender, age, arrival_date, stuff, phone, name_party', 'required'),
+			array('first_name, last_name, mail, gender, age, arrival_date, stuff, phone', 'required'),
 			array('age', 'numerical', 'integerOnly'=>true),
 			array('first_name, last_name, mail, name_party', 'length', 'max'=>200),
 			array('gender, stuff', 'length', 'max'=>6),
