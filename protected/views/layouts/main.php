@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/reset.css" type="text/css" media="all">
 	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/layout.css" type="text/css" media="all">
 	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" type="text/css" media="all">
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.6.js" ></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/cufon-yui.js"></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/cufon-replace.js"></script>
@@ -35,12 +36,12 @@
 			<header>
 				<nav>
 					<ul id="menu">
-						<li class="active"><a href="index.html">Club</a></li>
+						<li class="active"><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/index">Club</a></li>
 						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/guest/index">Parties</a></li>
 						<li><a href="Gallery.html">Gallery</a></li>
 						<li><a href="Residents.html">Residents</a></li>
 						<li><a href="News.html">News</a></li>
-						<li><a href="Contacts.html">Contacts</a></li>
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/contact">Contacts</a></li>
 					</ul>
 				</nav>
 				<h1><a href="index.html" id="logo">night club feel the rhythm</a></h1>
@@ -50,9 +51,6 @@
 				<div id="mainmenu">
 					<?php $this->widget('zii.widgets.CMenu',array(
 						'items'=>array(
-							array('label'=>'Home', 'url'=>array('/site/index')),
-							array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-							array('label'=>'Contact', 'url'=>array('/site/contact')),
 							array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 							array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 						),
