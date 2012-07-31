@@ -39,9 +39,8 @@
 						<li class="active"><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/index">Club</a></li>
 						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/guest/index">Parties</a></li>
 						<li><a href="Gallery.html">Gallery</a></li>
-						<li><a href="Residents.html">Residents</a></li>
 						<li><a href="News.html">News</a></li>
-						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/site/contact">Contacts</a></li>
+						<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/guest/admin">Admin</a></li>
 					</ul>
 				</nav>
 				<h1><a href="index.html" id="logo">night club feel the rhythm</a></h1>

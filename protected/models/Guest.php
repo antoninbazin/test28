@@ -50,7 +50,7 @@ class Guest extends CActiveRecord
 			array('phone', 'length', 'max'=>14),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, first_name, last_name, mail, gender, age, arrival_date, stuff, phone, name_party', 'safe', 'on'=>'search'),
+			array('first_name, last_name, mail, gender, age, arrival_date, stuff, phone, name_party', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -78,7 +78,7 @@ class Guest extends CActiveRecord
 			'gender' => 'Gender',
 			'age' => 'Age',
 			'arrival_date' => 'Arrival Date',
-			'stuff' => 'Stuff',
+			'stuff' => 'J\'apporte :',
 			'phone' => 'Phone',
 			'name_party' => 'Name Party',
 		);

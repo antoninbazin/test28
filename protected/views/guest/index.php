@@ -4,8 +4,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Guest', 'url'=>array('create')),
-	array('label'=>'Manage Guest', 'url'=>array('admin')),
+	array('label'=>'Créer un invité', 'url'=>array('create')),
+	array('label'=>'Gérer un invité', 'url'=>array('admin')),
 );
 ?>
 

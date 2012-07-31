@@ -29,7 +29,9 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'gender'); ?>
-		<?php echo $form->textField($model,'gender',array('size'=>6,'maxlength'=>6)); ?>
+		<?php echo $form->radioButtonList($model, 'gender', array(
+        'male'=>'Homme',
+        'female'=>'Femme',)); ?>
 		<?php echo $form->error($model,'gender'); ?>
 	</div>
 
@@ -47,7 +49,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'stuff'); ?>
-		<?php echo $form->textField($model,'stuff',array('size'=>6,'maxlength'=>6)); ?>
+		<?php echo $form->dropDownList($model, 'stuff', array('soft'=>'Boissons soft', 'alcool'=>'Alcool', 'sale'=>'Nourriture salé', 'sucre'=>'Nourriture sucré')); ?>
 		<?php echo $form->error($model,'stuff'); ?>
 	</div>
 
